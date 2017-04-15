@@ -238,8 +238,8 @@ html.no-csstransforms3d .headroom {
     text-align: left;
     color: white;
     background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
+/*    background-position: 50% 50%;
+*/    background-repeat: no-repeat;
     background-color: #23222d; }
     .big-header-container .main-header .main-header-content {
       padding-top: 9.375rem;
@@ -292,7 +292,7 @@ html.no-csstransforms3d .headroom {
       line-height: 3.75rem;
       font-size: 1.625rem; }
     .index-filters a.active .fa {
-      color: #ff4d4d; }
+      color: #940000; }
     .index-filters a:focus, .index-filters a:active {
       color: inherit; }
     .index-filters a:hover {
@@ -495,7 +495,7 @@ html.no-csstransforms3d .headroom {
         font-size: 0.875rem;
         text-transform: uppercase; }
         .loop .post-row .post .post-date a {
-          color: #ff4d4d;
+          color: #940000;
           position: relative;
           display: inline-block; }
           .loop .post-row .post .post-date a:after {
@@ -504,7 +504,7 @@ html.no-csstransforms3d .headroom {
             display: block;
             width: 0%;
             height: 0.125rem;
-            background-color: #ff4d4d;
+            background-color: #940000;
             bottom: 0;
             left: 50%;
             -webkit-transform: translateX(-50%);
@@ -514,7 +514,7 @@ html.no-csstransforms3d .headroom {
             transition: width .2s; }
           .loop .post-row .post .post-date a:hover, .loop .post-row .post .post-date a:focus, .loop .post-row .post .post-date a:active {
             text-decoration: none;
-            color: #ff4d4d; }
+            color: #940000; }
             .loop .post-row .post .post-date a:hover:after, .loop .post-row .post .post-date a:focus:after, .loop .post-row .post .post-date a:active:after {
               width: 100%; }
       .loop .post-row .post .post-title {
@@ -535,7 +535,7 @@ html.no-csstransforms3d .headroom {
         font-size: 0.75rem;
         text-transform: uppercase; }
         .loop .post-row .post .post-meta a {
-          color: #ff4d4d;
+          color: #940000;
           position: relative;
           display: inline-block; }
           .loop .post-row .post .post-meta a:after {
@@ -544,7 +544,7 @@ html.no-csstransforms3d .headroom {
             display: block;
             width: 0%;
             height: 0.125rem;
-            background-color: #ff4d4d;
+            background-color: #940000;
             bottom: 0;
             left: 50%;
             -webkit-transform: translateX(-50%);
@@ -554,7 +554,7 @@ html.no-csstransforms3d .headroom {
             transition: width .2s; }
           .loop .post-row .post .post-meta a:hover, .loop .post-row .post .post-meta a:focus, .loop .post-row .post .post-meta a:active {
             text-decoration: none;
-            color: #ff4d4d; }
+            color: #940000; }
             .loop .post-row .post .post-meta a:hover:after, .loop .post-row .post .post-meta a:focus:after, .loop .post-row .post .post-meta a:active:after {
               width: 100%; }
     .loop .post-row .post-read-more-btn {

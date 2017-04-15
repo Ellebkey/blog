@@ -94,7 +94,7 @@
       .cs-skin-slide.cs-active > span::after {
         font-family: 'FontAwesome';
         content: '\f0c9';
-        color: #ff4d4d;
+        color: #940000;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         -webkit-transform: translate3d(0, -50%, 0);
@@ -113,7 +113,7 @@
     .cs-skin-slide > span::after {
       font-family: 'FontAwesome';
       content: '\f0c9';
-      color: #ff4d4d;
+      color: #940000;
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
       font-size: 1.625rem; }
@@ -138,7 +138,7 @@
       background-color: transparent;
       background-color: white; }
     .cs-skin-slide .cs-options::-webkit-scrollbar-thumb {
-      background-color: #ff4d4d; }
+      background-color: #940000; }
     .cs-skin-slide .cs-options li {
       opacity: 0;
       -webkit-transition: opacity 1s;
@@ -150,13 +150,13 @@
         font-size: 85%;
         padding: 0.3125rem 1.25rem; }
         .cs-skin-slide .cs-options li span:hover {
-          color: #ff4d4d;
+          color: #940000;
           background: transparent; }
       .cs-skin-slide .cs-options li.cs-focus span {
-        color: #ff4d4d;
+        color: #940000;
         background: transparent; }
       .cs-skin-slide .cs-options li.cs-selected span {
-        color: #ff4d4d;
+        color: #940000;
         background: transparent; }
   .cs-skin-slide .cs-selected span::after {
     content: ''; }
