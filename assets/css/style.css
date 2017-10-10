@@ -271,10 +271,11 @@ html.no-csstransforms3d .headroom {
       position: absolute;
       right: 0.9375rem;
       top: 0;
-      width: 5.625rem;
+      width: 100%;
+      /*width: 5.625rem;*/
       height: 6.25rem;
       font-size: 2.25rem;
-      text-align: center; }
+      text-align: right; }
       .big-header-container .main-header .main-header-bars .fa {
         cursor: pointer;
         line-height: 6.25rem;
@@ -705,3 +706,17 @@ html.no-csstransforms3d .headroom {
     .pagination a .fa {
       font-size: 0.75rem;
       margin-right: 0.3125rem; }
+
+.home-menu {
+  margin: 0;
+  position: absolute;
+  right: 48px;
+  top: 36px;
+}
+
+.home-menu li{
+  display: inline;
+  margin-right: 16px;
+  font-size: 20px;
+  font-weight: 600;
+}

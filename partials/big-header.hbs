@@ -26,10 +26,15 @@
         {{/is}}>
 
         <div class="main-header-bars">
+            <ul class="home-menu">
+                <li>
+                    <a href="{{url}}">Home</a>
+                </li>
+                <li>
+                    <a href="{{url}}bio">Bio</a>
+                </li>
+            </ul> 
             <i class="fa fa-fw fa-search js-open-search"></i>
-            {{#if @blog.navigation}}
-                <i class="fa fa-fw fa-bars js-open-main-menu"></i>
-            {{/if}}
         </div>
         <div class="row main-header-content text-right">
             <div class="small-12 columns">
