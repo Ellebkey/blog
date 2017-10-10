@@ -4,7 +4,7 @@
         <h1 class="comments-header">You might enjoy:</h1>
         <div class="js-prev-next-post prev-next-post" data-equalizer>
             {{#prev_post}}
-                <div class="prev-block {{^next_post}}full-width{{/next_post}}" style="background-image: url({{#if image}}{{image}}{{else}}{{@blog.cover}}{{/if}});" data-equalizer-watch>
+                <div class="prev-block {{^next_post}}full-width{{/next_post}}" style="background-image: url({{#if feature_image}}{{img_url feature_image}}{{else}}{{@blog.cover_image}}{{/if}});" data-equalizer-watch>
                     <a href="{{url}}" class="prev-next-block-link">
                         <section class="description">
                             <span class="prev-next-label">Previous post</span>
@@ -13,7 +13,7 @@
                     </a>
                 </div>
             {{else}}
-                <div class="prev-block" style="background-image: url({{#if image}}{{image}}{{else}}{{@blog.cover}}{{/if}});" data-equalizer-watch>
+                <div class="prev-block" style="background-image: url({{#if feature_image}}{{img_url feature_image}}{{else}}{{@blog.cover_image}}{{/if}});" data-equalizer-watch>
                     <span class="prev-prev-block-link">
                         <section class="description">
                             <span class="prev-next-label">Prev post</span>
@@ -23,7 +23,7 @@
                 </div>
             {{/prev_post}}
             {{#next_post}}
-                <div class="next-block {{^prev_post}}full-width{{/prev_post}}" style="background-image: url({{#if image}}{{image}}{{else}}{{@blog.cover}}{{/if}});" data-equalizer-watch>
+                <div class="next-block {{^prev_post}}full-width{{/prev_post}}" style="background-image: url({{#if feature_image}}{{img_url feature_image}}{{else}}{{@blog.cover_image}}{{/if}});" data-equalizer-watch>
                     <a href="{{url}}" class="prev-next-block-link">
                         <section class="description">
                             <span class="prev-next-label">Next post</span>
@@ -32,7 +32,7 @@
                     </a>
                 </div>
             {{else}}
-                <div class="next-block" style="background-image: url({{#if image}}{{image}}{{else}}{{@blog.cover}}{{/if}});" data-equalizer-watch>
+                <div class="next-block" style="background-image: url({{#if feature_image}}{{img_url feature_image}}{{else}}{{@blog.cover_image}}{{/if}});" data-equalizer-watch>
                     <span class="prev-next-block-link">
                         <section class="description">
                             <span class="prev-next-label">Next post</span>

@@ -2,25 +2,25 @@
 <div class="big-header-container scene-element fade-in-down">
     <header class="main-header"
         {{#is "author"}}
-            {{#if cover}}
-                style="background-image: url({{cover}})"
+            {{#if cover_image}}
+                style="background-image: url({{cover_image}})"
             {{else}}
-                {{#if @blog.cover}}
-                    style="background-image: url({{@blog.cover}})"
+                {{#if @blog.cover_image}}
+                    style="background-image: url({{@blog.cover_image}})"
                 {{/if}}
             {{/if}}
         {{else}}
             {{#is "tag"}}
-                {{#if tag.image}}
-                    style="background-image: url({{tag.image}})"
+                {{#if tag.feature_image}}
+                    style="background-image: url({{tag.feature_image}})"
                 {{else}}
-                    {{#if @blog.cover}}
-                        style="background-image: url({{@blog.cover}})"
+                    {{#if @blog.cover_image}}
+                        style="background-image: url({{@blog.cover_image}})"
                     {{/if}}
                 {{/if}}
             {{else}}
-                {{#if @blog.cover}}
-                    style="background-image: url({{@blog.cover}})"
+                {{#if @blog.cover_image}}
+                    style="background-image: url({{@blog.cover_image}})"
                 {{/if}}
             {{/is}}
         {{/is}}>
@@ -90,10 +90,10 @@
         <div class="author-view-info">
             <div class="row">
                 <div class="small-12 columns">
-                    {{#if image}}
+                    {{#if feature_image}}
                         <div class="author-avatar">
                             <a href="{{url}}rss/" class="no-smoothstate right author-rss"><i class="fa fa-rss"></i></a>
-                            <img class="author-avatar-img" src="{{image}}" alt="{{name}}">
+                            <img class="author-avatar-img" src="{{img_url}}" alt="{{name}}">
                         </div>
                     {{/if}}
                     <div class="author-name">
