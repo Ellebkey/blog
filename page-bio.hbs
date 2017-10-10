@@ -1,0 +1,82 @@
+{{!-- Default static page is almost the same as post page view so the css classes remains the same --}}
+{{!-- you can add your own static pages and style it as you want --}}
+
+{{!< default}}
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+<div class="big-header-container scene-element fade-in-down" style="z-index: -9">
+  <header class="main-header" style="height: 22em; background-image: url({{@blog.cover_image}})">
+
+    <div class="main-header-bars">
+      <ul class="home-menu">
+        <li>
+          <a href="{{@blog.url}}">Home</a>
+        </li>
+        <li>
+          <a href="{{url}}">Bio</a>
+        </li>
+      </ul> 
+      <i class="fa fa-fw fa-search js-open-search"></i>
+    </div>
+  </header>
+</div>
+
+<main class="post-view-content scene-element fade-in-right" role="main">
+  <div class="post-view-right-container">
+    <article class="post-view-article {{post_class}}">
+      <section class="post-content row" style="max-width: 58rem;">
+        <div class="small-12 columns profile">
+          <div class="row">
+            
+            <div class="small-5 columns">
+              <div class="profile-photo">
+                <img src="http://rscard.px-lab.com/img/uploads/rs-photo-v1.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="small-7 columns">
+              <div class="profile-info">
+                <div class="profile-preword">
+                  <span>Hello</span>
+                </div>
+                <h1 class="profile-title">
+                  <span>Joel Barranco</span>
+                </h1>
+                <h2 class="profile-position">
+                  FullStack Developer
+                </h2>
+              </div>
+
+              <ul class="profile-list">
+                <li class="clearfix">
+                    <strong class="title">Age</strong>
+                    <span class="cont">25</span>
+                </li>
+                <li class="clearfix">
+                    <strong class="title">Address</strong>
+                    <span class="cont">Veracruz, México</span>
+                </li>
+                <li class="clearfix">
+                    <strong class="title">E-mail</strong>
+                    <span class="cont"><a href="mailto:hello@joelbarranco.io">hello@joelbarranco.io</a></span>
+                </li>
+                <li class="clearfix">
+                    <strong class="title">Phone</strong>
+                    <span class="cont"><a href="tel:+12562548456">+52 958 101 1652</a></span>
+                </li>
+            </ul>
+
+              <div class="profile-list">
+                
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </article>
+  </div>
+</main>
+
+
