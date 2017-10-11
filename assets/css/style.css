@@ -7,6 +7,11 @@ html {
   height: auto;
   min-height: 100%; }
 
+p > img {
+  margin: auto;
+  display: block;
+}
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 200;
