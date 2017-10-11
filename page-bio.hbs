@@ -5,7 +5,7 @@
 {{! The comment above "< default" means - insert everything in this file into
     the {body} of the default.hbs template, which contains our header/footer. }}
 
-<div class="big-header-container scene-element fade-in-down" style="z-index: -9">
+<div class="big-header-container scene-element fade-in-down" style="z-index: 0">
   <header class="main-header" style="height: 22em; background-image: url({{@blog.cover_image}})">
 
     <div class="main-header-bars">
@@ -26,6 +26,7 @@
   <div class="post-view-right-container">
     <article class="post-view-article {{post_class}}">
       <section class="post-content row" style="max-width: 58rem;">
+        <!-- Profile -->
         <div class="small-12 columns profile">
           <div class="row">
             
@@ -70,6 +71,9 @@
 
           </div>
         </div>
+        <!-- Profile -->
+
+        <!-- Socials -->
         <div class="small-12 columns" style="padding: 0;">
           <div class="profile-social">
             <ul class="social">
@@ -91,12 +95,75 @@
             </ul>
           </div>
         </div>
+        <!-- Socials -->
         
+        <!-- Description -->
         <div class="small-12 columns"  style="padding: 0;">
           <div class="section-txt-btn">
             <p>Hello! I’m Joel Barranco. FullStack Developer specializing in node.js and angularjs. Experienced with all stages of the development cycle for dynamic web projects. Well-versed in numerous programming languages including JavaScript, Python, and C. Background in computer vision and machine learning.</p>
           </div>
         </div>
+        <!-- Description -->
+        
+        <!-- Work -->
+        <div class="small-12 columns work">
+          <div class="animate-up animated">
+            <h2 class="section-title">Work Experience</h2>
+
+            <div class="timeline">
+              <div class="timeline-bar"></div>
+              <div class="timeline-inner clearfix" style="height: 999px;">
+                <div class="timeline-box timeline-box-left" id="first">
+                  <span class="dot"></span>
+                  <div class="timeline-box-inner animate-right animated">
+                    <span class="arrow"></span>
+                    <div class="date">2017 - TODAY</div>
+                    <h3>VERSE Software</h3>
+                    <h4>Full Stack developer</h4>
+                    <p>Worked as part of a multi-disciplinary team, carrying out ad-hoc tasks as requested by the IT Manager. Had a specific brief to ensure the websites build for customer’s precisely matched their requirements.developers and marketers.</p>
+                  </div>
+                </div>
+
+                <div class="timeline-box timeline-box-right" id="second">
+                  <span class="dot"></span>
+                  <div class="timeline-box-inner animate-left animated">
+                    <span class="arrow"></span>
+                    <div class="date">2016 - 2017</div>
+                    <h3>VERSE Consulting</h3>
+                    <h4>Web Developer</h4>
+                    <p>I was responsible for working on a range of projects, designing appealing websites and interacting on a daily basis with graphic designers, back-end developers and marketers.</p>
+                  </div>
+                </div>
+
+                <div class="timeline-box timeline-box-left" id="third">
+                  <span class="dot"></span>
+                  <div class="timeline-box-inner animate-right animated">
+                    <span class="arrow"></span>
+                    <div class="date">2003 - 2006</div>
+                    <h3>Universidad Veracruzana</h3>
+                    <h4>Systems Analyst / Web Developer</h4>
+                    <p>Rebuilt and enhanced existing ASP B2C site with ASP.NET 2.0 Framework and tools. Technology consists of ASP.NET 2.0 (C#), IIS, Microsoft SQL Server 2005, Stored Procedures &amp; PayPal Instant Payment Notification.</p>
+                  </div>
+                </div>
+
+                <!-- <div class="timeline-box timeline-box-right" style="position: absolute; right: 0px; top: 380px;">
+                  <span class="dot"></span>
+                  <div class="timeline-box-inner animate-left animated">
+                    <span class="arrow"></span>
+                    <div class="date">2004 - 2008</div>
+                    <h3>IBBBM</h3>
+                    <h4>Webmaster / Web Developer</h4>
+                    <p>Developed, managed, operated and promoted an Internet business.Handled customer support issues.Planned and managed business finances.</p>
+                  </div>
+                </div> -->
+
+              </div>
+            </div>
+          </div>  
+        </div>
+        <!-- Work -->
+
+
       </section>
     </article>
   </div>

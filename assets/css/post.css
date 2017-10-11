@@ -9,7 +9,7 @@
   line-height: 3.125rem;
   text-align: center;
   z-index: 10;
-  color: #23222D;
+  color: #1c1c1c;
   cursor: pointer;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
@@ -42,7 +42,7 @@
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-color: #23222D;
+    background-color: #1c1c1c;
     position: relative; }
     @media only screen and (min-width: 64em) {
       .post-view .post-view-sidebar {
@@ -148,7 +148,7 @@
           padding: 0.625rem 0.625rem 1.875rem;
           display: none; }
           .post-view .post-view-sidebar .post-view-elems .post-view-elems-body .post-view-elems-share a {
-            color: #23222D;
+            color: #1c1c1c;
             font-size: 1rem; }
             .post-view .post-view-sidebar .post-view-elems .post-view-elems-body .post-view-elems-share a .fa-stack {
               display: inline-block;
@@ -209,7 +209,7 @@
         padding: 3.75rem 0; }
         .post-view .post-view-content .post-view-right-container .post-view-article .post-article-content p a,
         .post-view .post-view-content .post-view-right-container .post-view-article .post-article-content ul a {
-          color: #940000;
+          color: #C43540;
           position: relative;
           display: inline-block; }
           .post-view .post-view-content .post-view-right-container .post-view-article .post-article-content p a.button,
@@ -232,7 +232,7 @@
             display: block;
             width: 0;
             height: 0.0625rem;
-            background-color: #940000;
+            background-color: #C43540;
             bottom: 0;
             left: 50%;
             -webkit-transform: translateX(-50%);
@@ -245,7 +245,7 @@
           .post-view .post-view-content .post-view-right-container .post-view-article .post-article-content ul a:focus,
           .post-view .post-view-content .post-view-right-container .post-view-article .post-article-content ul a:active {
             text-decoration: none;
-            color: #940000; }
+            color: #C43540; }
             .post-view .post-view-content .post-view-right-container .post-view-article .post-article-content p a:hover:after, .post-view .post-view-content .post-view-right-container .post-view-article .post-article-content p a:focus:after, .post-view .post-view-content .post-view-right-container .post-view-article .post-article-content p a:active:after,
             .post-view .post-view-content .post-view-right-container .post-view-article .post-article-content ul a:hover:after,
             .post-view .post-view-content .post-view-right-container .post-view-article .post-article-content ul a:focus:after,
@@ -270,7 +270,7 @@
                 font-size: 4.5rem; } }
           .post-view .post-view-content .post-view-right-container .post-view-article .post-header-content .post-title-separator {
             height: 0.3125rem;
-            background-color: #23222D;
+            background-color: #1c1c1c;
             width: 12.5rem;
             margin-top: 1.25rem;
             margin-bottom: 1.25rem; }
@@ -294,7 +294,7 @@
   .post-tags a {
     display: inline-block;
     padding: 0.3125rem 0.9375rem;
-    background: #940000;
+    background: #C43540;
     color: #ffffff;
     font-weight: 400;
     -webkit-transition: background-color .3s;
@@ -325,11 +325,11 @@
       color: #9d9bb3;
       font-style: italic; }
     .author-info .post-author .author-link-name {
-      color: #23222D;
+      color: #1c1c1c;
       -webkit-transition: color .3s;
       transition: color .3s; }
       .author-info .post-author .author-link-name:active, .author-info .post-author .author-link-name:hover, .author-info .post-author .author-link-name:focus {
-        color: #940000; }
+        color: #C43540; }
     .author-info .post-author .author-website {
       font-size: 1rem; }
     .author-info .post-author h1 {
@@ -342,7 +342,7 @@
     .author-info .post-author > p {
       font-size: 1.125rem; }
       .author-info .post-author > p a {
-        color: #940000;
+        color: #C43540;
         font-weight: 400; }
     .author-info .post-author .post-author-avatar {
       width: 12.5rem;
@@ -402,7 +402,7 @@
         .prev-next-post .prev-block .description:hover .prev-next-label,
         .prev-next-post .next-block .description:hover .prev-next-label {
           background-color: #ffffff;
-          color: #23222D; }
+          color: #1c1c1c; }
       .prev-next-post .prev-block .description .prev-next-label,
       .prev-next-post .prev-block .description .post-title,
       .prev-next-post .next-block .description .prev-next-label,

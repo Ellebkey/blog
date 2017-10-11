@@ -77,14 +77,14 @@
     .cs-select ul span {
       padding: 1rem; }
     .cs-select ul li.cs-focus span {
-      background-color: #23222d; }
+      background-color: #1c1c1c; }
     .cs-select ul li.cs-optgroup ul {
       padding-left: 1rem; }
     .cs-select ul li.cs-optgroup > span {
       cursor: default; }
 
 .cs-skin-slide {
-  color: #23222d;
+  color: #1c1c1c;
   font-size: 1.5rem; }
   .cs-skin-slide.cs-active {
     border: 0; }
@@ -94,7 +94,7 @@
       .cs-skin-slide.cs-active > span::after {
         font-family: 'FontAwesome';
         content: '\f0c9';
-        color: #940000;
+        color: #C43540;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         -webkit-transform: translate3d(0, -50%, 0);
@@ -113,7 +113,7 @@
     .cs-skin-slide > span::after {
       font-family: 'FontAwesome';
       content: '\f0c9';
-      color: #940000;
+      color: #C43540;
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
       font-size: 1.625rem; }
@@ -138,7 +138,7 @@
       background-color: transparent;
       background-color: white; }
     .cs-skin-slide .cs-options::-webkit-scrollbar-thumb {
-      background-color: #940000; }
+      background-color: #C43540; }
     .cs-skin-slide .cs-options li {
       opacity: 0;
       -webkit-transition: opacity 1s;
@@ -150,13 +150,13 @@
         font-size: 85%;
         padding: 0.3125rem 1.25rem; }
         .cs-skin-slide .cs-options li span:hover {
-          color: #940000;
+          color: #C43540;
           background: transparent; }
       .cs-skin-slide .cs-options li.cs-focus span {
-        color: #940000;
+        color: #C43540;
         background: transparent; }
       .cs-skin-slide .cs-options li.cs-selected span {
-        color: #940000;
+        color: #C43540;
         background: transparent; }
   .cs-skin-slide .cs-selected span::after {
     content: ''; }
