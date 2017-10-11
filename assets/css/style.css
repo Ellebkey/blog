@@ -716,7 +716,7 @@ html.no-csstransforms3d .headroom {
 }
 
 .home-menu li{
-  display: inline;
+  display: inline-block;
   margin-right: 16px;
   font-size: 20px;
   font-weight: 600;
@@ -726,8 +726,25 @@ html.no-csstransforms3d .headroom {
   color: white !important;
 }
 
-.home-menu li a:hover{ 
-  text-decoration: underline;
+.home-menu li:after {
+    position: relative;
+    content: " ";
+    display: block;
+    width: 0%;
+    height: 0.125rem;
+    background-color: #FFF;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: width .2s;
+    transition: width .2s;
+}
+
+
+.home-menu li:hover:after {
+  width: 100%; 
 }
 
 .profile{
@@ -783,11 +800,18 @@ html.no-csstransforms3d .headroom {
 .profile-title span {
   font-weight: 300;
 }
-.profile-position {
-  font-size: 18px;
-  font-weight: 400;
+.profile-position, .profile-edu{
   line-height: 1.1;
   margin-bottom: 0;
+}
+
+.profile-position{
+  font-weight: 200;
+  font-size: 18px;
+}
+.profile-edu {
+  font-weight: 500;
+  font-size: 22px;
 }
 
 .profile-list {
@@ -1078,7 +1102,7 @@ html.no-csstransforms3d .headroom {
     top: 80px; height: 340px;
   }
 }
-.timeline-bar, .timeline-box .dot, .filter .active:after, .filter-bar .filter-bar-line, .progress-bar .bar-fill, .theme-color-C43540 .progress-bar .bar-line:after, .theme-color-C43540 .price-box.box-primary .btn, .theme-color-C43540 .price-box.box-primary .price-box-top, .theme-color-C43540 .profile-list .button, .theme-color-C43540 .pagination .page-numbers.current, .theme-color-C43540 .pagination .page-numbers.current:hover, .theme-color-C43540 .pagination .page-numbers:active, .theme-color-C43540 .pagination .page-numbers.next:active, .theme-color-C43540 .pagination .page-numbers.prev:active, .theme-color-C43540 .timeline-bar, .theme-color-C43540 .timeline-box .dot, .theme-color-C43540 .timeline-box-compact .date span, .theme-color-C43540 .widget_tag_cloud a:hover {
+.timeline-bar, .timeline-box .dot, .filter .active:after, .filter-bar .filter-bar-line, .progress-bar .bar-fill, .progress-bar .bar-line:after, .price-box.box-primary .btn, .price-box.box-primary .price-box-top,  .profile-list .button,  .pagination .page-numbers.current,  .pagination .page-numbers.current:hover,  .pagination .page-numbers:active,  .pagination .page-numbers.next:active,  .pagination .page-numbers.prev:active,  .timeline-bar,  .timeline-box .dot,  .timeline-box-compact .date span,  .widget_tag_cloud a:hover {
     background-color: #C43540;
 }
 
@@ -1095,3 +1119,15 @@ html.no-csstransforms3d .headroom {
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 }
 
+.timeline-box-compact .date span {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    display: inline-block;
+    position: relative;
+    padding: 5px 8px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
