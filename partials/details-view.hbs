@@ -113,14 +113,14 @@
                         </section>
                     {{/if}}
                     {{! Everything inside the #author tags pulls data from the author }}
-                    {{#author}}
+                    {{#primary_author}}
                         <section class="author-info">
                             <div class="row">
                                 <section class="post-author small-12 columns">
-                                    
-                                    
+
+
                                         <img src="{{profile_image}}" class="post-author-avatar" alt="{{name}}">
-                                    
+
                                     {{#if name}}
                                         <span class="author-label">Author</span>
                                         <h1><a href="{{url}}" class="author-link-name">{{name}}</a></h1>
@@ -132,7 +132,7 @@
                                 </section>
                             </div>
                         </section>
-                    {{/author}}
+                    {{/primary_author}}
                     <div class="cf"></div>
                     {{> "prev-next-post"}}
                     <div class="cf"></div>
