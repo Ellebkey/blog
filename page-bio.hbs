@@ -6,222 +6,303 @@
     the {body} of the default.hbs template, which contains our header/footer. }}
 
 <div class="big-header-container scene-element fade-in-down" style="z-index: 0">
-  <header class="main-header" style="height: 22em; background-image: url({{@blog.cover_image}})">
+    <header class="main-header" style="height: 22em; background-image: url({{@blog.cover_image}})">
 
-    <div class="main-header-bars">
-      <ul class="home-menu">
-        <li>
-          <a href="{{@blog.url}}">Home</a>
-        </li>
-        <li>
-          <a href="{{url}}">Bio</a>
-        </li>
-      </ul>
-      <i class="fa fa-fw fa-search js-open-search"></i>
-    </div>
-  </header>
+        <div class="main-header-bars">
+            <ul class="home-menu">
+                <li>
+                    <a href="{{@blog.url}}">Home</a>
+                </li>
+                <li>
+                    <a href="{{url}}">Bio</a>
+                </li>
+            </ul>
+            <i class="fa fa-fw fa-search js-open-search"></i>
+        </div>
+    </header>
 </div>
 
 <main class="post-view-content scene-element fade-in-right" role="main">
-  <div class="post-view-right-container">
-    <article class="post-view-article {{post_class}}">
-      <section class="post-content row" style="max-width: 58rem; margin-bottom: 2em;">
-        <!-- Profile -->
-        <div class="small-12 columns profile">
-          <div class="row">
+    <div class="post-view-right-container">
+        <article class="post-view-article {{post_class}}">
+            <section class="post-content row" style="max-width: 58rem; margin-bottom: 2em;">
+                <!-- Profile -->
+                <div class="small-12 columns profile">
+                    <div class="row">
 
-            <div class="small-12 medium-5 columns">
-              <div class="profile-photo">
-                <img src="http://rscard.px-lab.com/img/uploads/rs-photo-v1.jpg" alt="">
-              </div>
-            </div>
+                        <div class="small-12 medium-5 columns">
+                            <div class="profile-photo">
+                                <img src="http://rscard.px-lab.com/img/uploads/rs-photo-v1.jpg" alt="">
+                            </div>
+                        </div>
 
-            <div class="small-12 medium-7 columns">
-              <div class="profile-info">
-                <div class="profile-preword">
-                  <span>Hello</span>
+                        <div class="small-12 medium-7 columns">
+                            <div class="profile-info">
+                                <div class="profile-preword">
+                                    <span>Hello</span>
+                                </div>
+                                <h1 class="profile-title">
+                                    <span>I'm <strong>Joel Barranco</strong></span>
+                                </h1>
+                                <h2 class="profile-edu">
+                                    Computer Engineer
+                                </h2>
+                                <h3 class="profile-position" style="margin-top: 8px">Fullstack Javascript Developer & AI
+                                    enthusiast</h3>
+                            </div>
+
+                            <ul class="profile-list">
+                                <li class="clearfix">
+                                    <strong class="title">Age</strong>
+                                    <span class="cont">26</span>
+                                </li>
+                                <li class="clearfix">
+                                    <strong class="title">Address</strong>
+                                    <span class="cont">Guadalajara, México</span>
+                                </li>
+                                <li class="clearfix">
+                                    <strong class="title">E-mail</strong>
+                                    <span class="cont"><a href="mailto:hello@joelbarranco.io">hello@joelbarranco.io</a></span>
+                                </li>
+                                <li class="clearfix">
+                                    <strong class="title">Phone</strong>
+                                    <span class="cont"><a href="tel:+12562548456">+52 1 958 101 1652</a></span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
                 </div>
-                <h1 class="profile-title">
-                  <span>I'm <strong>Joel Barranco</strong></span>
-                </h1>
-                <h2 class="profile-edu">
-                  Computer Engineer
-                </h2>
-                <h3 class="profile-position">Fullstack Javascript Developer & AI enthusiast</h3>
-              </div>
+                <!-- Profile -->
 
-              <ul class="profile-list">
-                <li class="clearfix">
-                    <strong class="title">Age</strong>
-                    <span class="cont">26</span>
-                </li>
-                <li class="clearfix">
-                    <strong class="title">Address</strong>
-                    <span class="cont">Guadalajara, México</span>
-                </li>
-                <li class="clearfix">
-                    <strong class="title">E-mail</strong>
-                    <span class="cont"><a href="mailto:hello@joelbarranco.io">hello@joelbarranco.io</a></span>
-                </li>
-                <li class="clearfix">
-                    <strong class="title">Phone</strong>
-                    <span class="cont"><a href="tel:+12562548456">+52 1 958 101 1652</a></span>
-                </li>
-              </ul>
-            </div>
-
-          </div>
-        </div>
-        <!-- Profile -->
-
-        <!-- Socials -->
-        <div class="small-12 columns" style="padding: 0;">
-          <div class="profile-social">
-            <ul class="social">
-              <li>
-                <a href="https://www.facebook.com/Ellebkey" target="_blank"><i class="fa fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="https://twitter.com/Ellebkey" target="_blank"><i class="fa fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="https://github.com/Ellebkey" target="_blank"><i class="fa fa-github"></i></a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/ellebkey/" target="_blank"><i class="fa fa-instagram"></i></a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/joelbarranco/" target="_blank"><i class="fa fa-linkedin"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <!-- Socials -->
-
-        <!-- Description -->
-        <div class="small-12 columns"  style="padding: 0;">
-          <div class="section-txt-btn">
-            <p>Hello! I’m Joel Barranco. Fullstack Javascript Developer specializing in Node.js and
-                AngularJS/Angular. Experienced with all stages of the development cycle for dynamic web projects.
-                Well-versed in various programming languages including JavaScript, Python, C and background in
-                computer vision and machine learning.</p>
-          </div>
-        </div>
-        <!-- Description -->
-
-        <!-- Education -->
-        <div class="small-12 columns work">
-          <h2 class="section-title">Education</h2>
-          <div class="timeline-box timeline-box-compact timeline-box-left" style="width: 100%">
-
-            <div class="timeline-box-inner animate-right animated" style="margin: 0;">
-              <div class="date"><span>2013 - 2016</span></div>
-              <h3>Bachelor Computer Engineering</h3>
-              <h4>Universidad Veracruzana</h4>
-            </div>
-          </div>
-        </div>
-        <!-- Education -->
-
-        <!-- Work -->
-        <div class="small-12 columns work">
-          <div class="animate-up animated">
-            <h2 class="section-title">Work Experience</h2>
-
-            <div class="timeline">
-              <div class="timeline-bar"></div>
-              <div class="timeline-inner clearfix" style="height: 999px;">
-                <div class="timeline-box timeline-box-left" id="first">
-                  <span class="dot"></span>
-                  <div class="timeline-box-inner animate-right animated">
-                    <span class="arrow"></span>
-                    <div class="date">Nov 2018 - TODAY</div>
-                    <h3>Softtek</h3>
-                    <h4>Fullstack Javascript Developer</h4>
-                    <p> Fullstack Developer on one of the team on HP Inc. :
-                      <ul>
-                        <li>Deliver of full UI interfaces with AngularJS, HTML5 and CSS.</li>
-                        <li>Creation of new services and controllers to upgrade the data show it on the frontend. </li>
-                        <li>Resolve bugs to improve performance and user experience on our products.</li>
-                      </ul>
-                    </p>
-                  </div>
+                <!-- Socials -->
+                <div class="small-12 columns" style="padding: 0;">
+                    <div class="profile-social">
+                        <ul class="social">
+                            <li>
+                                <a href="https://www.facebook.com/Ellebkey" target="_blank"><i
+                                        class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/Ellebkey" target="_blank"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/Ellebkey" target="_blank"><i class="fa fa-github"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/ellebkey/" target="_blank"><i
+                                        class="fa fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/joelbarranco/" target="_blank"><i
+                                        class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+                <!-- Socials -->
 
-                <div class="timeline-box timeline-box-right" id="second">
-                  <span class="dot"></span>
-                  <div class="timeline-box-inner animate-left animated">
-                    <span class="arrow"></span>
-                    <div class="date">Dic 2017 - Nov 2018</div>
-                    <h3>Stackcode</h3>
-                    <h4>Project Lead / Fullstack Javacript Developer</h4>
-                    <p>Lead role in a small team, managing, guiding and mentoring new developers, and FullStack
-                        Developer of Stackcode Startup. My responsibilities were:
-                    </p>
-                    <ul>
-                      <li>Development of strategies, analyses of requirements from customers, manage the resources
-                          and scheduling the Sprints process with SCRUM and Jira Software. </li>
-                      <li>Design data models for upcoming projects as well as enhance existing data models
-                              for new requirements</li>
-                      <li>Creation of RESTful / API endpoints using Node.js and Express. Deliver full UI
-                              interfaces using AngularJS, HTML5 and CSS.</li>
-                      <li>Resolve bugs to improve performance and user experience on our products.</li>
-                    </ul>
-                  </div>
+                <!-- Description -->
+                <div class="small-12 columns" style="padding: 0;">
+                    <div class="section-txt-btn">
+                        <p><a class="btn btn-border" target="_blank" href="">Download Resume</a></p>
+                        <p style="margin-bottom: 0">Hello! I’m Joel Barranco. Fullstack Javascript Developer specialized
+                            in Node
+                            .js and AngularJS/Angular. Experienced with all stages of the development cycle of dynamic
+                            web projects.
+                            Well-versed in various programming languages including JavaScript, Python, C and background
+                            in
+                            computer vision and machine learning.</p>
+                    </div>
                 </div>
+                <!-- Description -->
 
-                <div class="timeline-box timeline-box-left" id="third">
-                  <span class="dot"></span>
-                  <div class="timeline-box-inner animate-right animated">
-                    <span class="arrow"></span>
-                    <div class="date">Jan 2017 - Nov 2017</div>
-                    <h3>VERSE Software</h3>
-                    <h4>Fullstack Javascript Developer</h4>
-                    <p>Worked as part of a multi-disciplinary team, carrying out ad-hoc tasks, including Frontend
-                        and Backend, as requested by the IT Manager. Had a specific brief to ensure the web platform
-                        build for customers precisely matched their requirements.</p>
-                  </div>
+                <!-- Profile -->
+                <div class="small-12 columns work">
+                    <h2 class="section-title">Profile</h2>
+                    <div class="timeline-box timeline-box-compact timeline-box-left" style="width: 100%">
+                        <div class="timeline-box-inner animate-right animated" style="margin: 0;">
+                            <h3 style="text-align: center">Fullstack Javascript Developer </h3>
+                            <ul class="profile-list profile-list-resume">
+                                <li><strong>4+ </strong>years of experience as a Web Developer, integrating
+                                    different technologies and solutions.
+                                </li>
+                                <li><strong>4+ </strong>years using Javascript as my main programming language. In
+                                    the past year I've been implementing ES6 features. I've worked with Promises, Async
+                                    functions, Arrow functions, spread operator, template literals, etc.
+                                </li>
+                                <li><strong>3+ </strong>years of experience on AngularJS/Angular, Node.Js and
+                                    Express.js (MEAN stack). Creating complete web SaaS applications.
+                                </li>
+                                <li><strong>3+ </strong>years of experience on relational database design, consults,
+                                    stored procedures, views, etc. With DBMS as MySQL and Postgresql together with
+                                    Sequelize.js ORM.
+                                </li>
+                                <li>
+                                    <strong>2 </strong>years with NoSQL databases as MongoDB with Mongoose.js ODM and
+                                    Redis.
+                                </li>
+                                <li>
+                                    <strong>2 </strong>years using Google Maps, I was in charge of all FrontEnd
+                                    development of a Web System that used GPS on vehicles and need to show all the
+                                    routes, actual ubication on the map.
+                                </li>
+                                <li>
+                                    <strong>2 </strong> years of experience with Socket.io for websockets and
+                                    dialogflow for a project that needed a personal assistance on the system.
+                                </li>
+                                <li>
+                                    <strong>2 </strong>years of experience with Python and OpenCV developing
+                                    algorithms of artificial vision for object recognition and classification.
+                                </li>
+                                <li>
+                                    <strong>1 </strong> year of experience on the SCRUM methology and Jira software.
+                                </li>
+                                <li>
+                                    <strong>4 </strong>years of basic servers administration, as DNS, SSL, Apache,
+                                    Nginx, etc.
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+                <!-- Profile -->
 
-                <div class="timeline-box timeline-box-right" id="fourth">
-                  <span class="dot"></span>
-                  <div class="timeline-box-inner animate-left animated">
-                    <span class="arrow"></span>
-                    <div class="date">Feb 2016 - Dic 2016</div>
-                      <h3>VERSE Business</h3>
-                      <h4>Web Developer</h4>
-                      <p>Web Developer, designing and implementing web pages using technologies such as Wordpress,
-                          HTML5, CSS with Bootstrap and javascript JQuery. Server administration, ftp accounts and emails.</p>
-                  </div>
+                <!-- Work -->
+                <div class="small-12 columns work">
+                    <div class="animate-up animated">
+                        <h2 class="section-title">Work Experience</h2>
+
+                        <div class="timeline">
+                            <div class="timeline-bar"></div>
+                            <div class="timeline-inner clearfix">
+                                <div class="timeline-box timeline-box-left" id="first">
+                                    <span class="dot"></span>
+                                    <div class="timeline-box-inner animate-right animated">
+                                        <span class="arrow"></span>
+                                        <div class="date">Nov 2018 - TODAY</div>
+                                        <h3>Softtek</h3>
+                                        <h4>Fullstack Javascript Developer</h4>
+                                        <p> Fullstack Developer on one of the team on HP Inc. :
+                                        <ul>
+                                            <li>Creation of RESTful / API endpoints using Node.js, Express and
+                                                Mongoose. Complete UI interfaces delivery using AngularJS, HTML5/Jade
+                                                and CSS/SASS.
+                                            </li>
+                                            <li>Improvment of services performance as maping data or using async
+                                                functions.</li>
+                                            <li> Creation of test cases using Mocha.</li>
+                                            <li>Resolve bugs to improve performance and user experience on our
+                                                products.
+                                            </li>
+                                        </ul>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-box timeline-box-right" id="second">
+                                    <span class="dot"></span>
+                                    <div class="timeline-box-inner animate-left animated">
+                                        <span class="arrow"></span>
+                                        <div class="date">Dic 2017 - Nov 2018</div>
+                                        <h3>Stackcode</h3>
+                                        <h4>Project Lead / Fullstack Javacript Developer</h4>
+                                        <p>Lead role in a small team, managing, guiding and mentoring new developers,
+                                            and FullStack
+                                            Developer of Stackcode Startup. My responsibilities were:
+                                        </p>
+                                        <ul>
+                                            <li>Development of strategies, analyses of requirements from customers,
+                                                manage the resources
+                                                and scheduling the Sprints process with SCRUM and Jira Software.
+                                            </li>
+                                            <li>Design data models for upcoming projects as well as enhance existing
+                                                data models
+                                                for new requirements
+                                            </li>
+                                            <li>Creation of RESTful / API endpoints using Node.js and Express
+                                                .Complete UI interfaces delivery AngularJS, HTML5 and CSS.
+                                            </li>
+                                            <li>Resolve bugs to improve performance and user experience on our
+                                                products.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-box timeline-box-left" id="third">
+                                    <span class="dot"></span>
+                                    <div class="timeline-box-inner animate-right animated">
+                                        <span class="arrow"></span>
+                                        <div class="date">Jan 2017 - Nov 2017</div>
+                                        <h3>VERSE Software</h3>
+                                        <h4>Fullstack Javascript Developer</h4>
+                                        <p>Worked as part of a multi-disciplinary team, carrying out ad-hoc tasks,
+                                            including Frontend
+                                            and Backend, as requested by the IT Manager. Had a specific brief to ensure
+                                            the web platform
+                                            build for customers precisely matched their requirements.</p>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-box timeline-box-right" id="fourth">
+                                    <span class="dot"></span>
+                                    <div class="timeline-box-inner animate-left animated">
+                                        <span class="arrow"></span>
+                                        <div class="date">Feb 2016 - Dic 2016</div>
+                                        <h3>VERSE Business</h3>
+                                        <h4>Web Developer</h4>
+                                        <p>Web Developer, designing and implementing web pages using technologies such
+                                            as Wordpress,
+                                            HTML5, CSS with Bootstrap and javascript JQuery. Server administration, ftp
+                                            accounts and emails.</p>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-box timeline-box-left" id="fifth">
+                                    <span class="dot"></span>
+                                    <div class="timeline-box-inner animate-left animated">
+                                        <span class="arrow"></span>
+                                        <div class="date">Feb 2015 - Dic 2015</div>
+                                        <h3>Universidad Veracruzana</h3>
+                                        <h4>Assistant National Investigator</h4>
+                                        <p>Scholarship holder from Ph.D. Luis Felipe Marín Urías. I developed and
+                                            implemented an
+                                            artificial vision algorithm using OpenCV and artificial neuronal networks
+                                            with python for
+                                            the project of the construction of a mobile robot for human-machine
+                                            interaction in
+                                            recognition of corporal gestures from human body.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!-- Work -->
 
-                <div class="timeline-box timeline-box-left" id="fifth">
-                  <span class="dot"></span>
-                  <div class="timeline-box-inner animate-left animated">
-                      <span class="arrow"></span>
-                      <div class="date">Feb 2015 - Dic 2015</div>
-                      <h3>Universidad Veracruzana</h3>
-                      <h4>Assistant National Investigator</h4>
-                      <p>Scholarship holder from Ph.D. Luis Felipe Marín Urías. I developed and implemented an
-                          artificial vision algorithm using OpenCV and artificial neuronal networks with python for
-                          the project of the construction of a mobile robot for human-machine interaction in
-                          recognition of corporal gestures from human body.</p>
-                  </div>
+                <!-- Education -->
+                <div class="small-12 columns work">
+                    <h2 class="section-title">Education</h2>
+                    <div class="timeline-box timeline-box-compact timeline-box-left" style="width: 100%">
+
+                        <div class="timeline-box-inner animate-right animated" style="margin: 0;">
+                            <div class="date"><span>2013 - 2016</span></div>
+                            <h3>Bachelor Computer Engineering</h3>
+                            <h4>Universidad Veracruzana</h4>
+                        </div>
+                    </div>
                 </div>
+                <!-- Education -->
+                <!-- Portafolio -->
 
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Work -->
+                <!-- Portafolio -->
 
-        <!-- Portafolio -->
-
-        <!-- Portafolio -->
-
-      </section>
-    </article>
-  </div>
+            </section>
+        </article>
+    </div>
 </main>
 
 

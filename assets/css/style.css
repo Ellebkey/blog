@@ -826,6 +826,12 @@ html.no-csstransforms3d .headroom {
   list-style: none;
 }
 
+.profile-list-resume {
+  margin: 1em;
+  padding: 0;
+  list-style: initial !important;
+}
+
 .profile-list li {
   margin-bottom: 13px;
 }
@@ -1092,37 +1098,17 @@ html.no-csstransforms3d .headroom {
     .timeline-box .dot {
       display: none; }
 }
-/*
+
 @media only screen and (min-width: 768px) {
-  #first {
-    position: absolute; left: 0px; top: 0px;
-  }
-
   #second {
-    position: absolute; right: 0px; top: 70px;
-  }
-
-  #third {
-    position: absolute; left: 0px; top: 400px;
+    top: 60px;
   }
 
   #fourth {
-    position: absolute; right: 0px; top: 700px;
+    top: 60px;
   }
 
-  #fifth {
-    position: absolute; left: 0px; top: 1100px; width: 100%;
-  }
-
-  #fifth > .timeline-box-inner {
-    margin: 0 !important;
-  }
-
-  .timeline .timeline-bar {
-    top: 80px; height: 670px;
-  }
 }
-*/
 .timeline-bar, .timeline-box .dot, .filter .active:after, .filter-bar .filter-bar-line, .progress-bar .bar-fill, .progress-bar .bar-line:after, .price-box.box-primary .btn, .price-box.box-primary .price-box-top,  .profile-list .button,  .pagination .page-numbers.current,  .pagination .page-numbers.current:hover,  .pagination .page-numbers:active,  .pagination .page-numbers.next:active,  .pagination .page-numbers.prev:active,  .timeline-bar,  .timeline-box .dot,  .timeline-box-compact .date span,  .widget_tag_cloud a:hover {
     background-color: #C43540;
 }
@@ -1155,6 +1141,37 @@ html.no-csstransforms3d .headroom {
 
 .post-full-content .kg-image {
   max-width: 100%;
+}
+
+.btn,
+.btn-outer {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2), 0 2px 5px rgba(0, 0, 0, 0.17); }
+
+.btn:hover, .btn:focus, .btn-outer:hover, .btn-outer:focus {
+  opacity: 0.95;
+  text-decoration: none;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.btn-border {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #3d4451 !important;
+  border: 1px solid #cbcdcf;
+  background: transparent;
+  box-shadow: none;
+  padding: 1.2em 3em;
 }
 
 /* Preventing full-width image overlap with post image.  */
